@@ -1,9 +1,10 @@
 html {
     height: 100%;
     font-family: Garamond, serif;
-  }
-  
-  body {
+    color: white;
+}
+
+body {
     background-image: url(images/background.jpg);
     min-height: 100vh;
     width: 100%;
@@ -12,92 +13,107 @@ html {
     background-position: center;
     background-size: cover;
     position: relative;
-  }
-  
-  main {
+}
+
+main {
     padding: 0 20px 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* CSS for navigation bar */
-  
-  .navbar {
+}
+
+/* CSS for navigation bar */
+
+.navbar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
     height: 7%;
     z-index: 10;
-  
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-  
-    background-color: black;
-    color: white;
+
+    background-color:rgba(4, 9, 30, 0.3);
+    border-bottom: black double;
     padding: 0px 0px;
-  
+
     /* Debug border */
     /* border: solid red; */
-  }
-  
-  .nav-list {
+}
+
+.nav-list {
     display: flex;
     flex-direction: row;
     position: relative;
     right: 30px;
     list-style: none;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     color: white;
     font-weight: bold;
     margin: 0 12px;
     text-decoration: none;
     letter-spacing: 2px;
-  }
 
-  .navbar a:hover {
+}
+
+.navbar img {
+    max-width: 50px;
+}
+
+.navbar a:hover {
     color: var(--cg-blue);
     text-decoration: underline;
-  }
-  
-  /* CSS for page footer */
-  
-  .footer {
+}
+
+/* CSS for page footer */
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgba(4, 9, 30, 0.3);
     color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-  }
+}
 
-  .about {
+    /* CSS for Index Page */
+.about {
     display:flex;
-    align-items:center;
-    justify-content:space-between;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
     background-color: rgba(4, 9, 30, 0.3);
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 5px solid black;
+    border-radius: 10px;
     border-style: double;
-  }
+}
 
-  .about-text {
+.about-text {
     font-size: 20pt;
-  }
-  
-  .about-image img {
+}
+
+.about-image img {
     max-width: 300px;
-    border-radius: 3px;
     border-radius: 50%;
+    border: 1px solid black;
+    align-self: left;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-  }
+}
+
+.about-image2 img {
+    max-width: 300px;
+    border-radius: 5%;
+    border: 1px solid black;
+    align-self: right;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
